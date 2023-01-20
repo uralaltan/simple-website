@@ -11,7 +11,7 @@
 <body>
 
     <div class="overlay" id="overlay">
-        <h3>Süre yetmedi la (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
+        <h3>Burayı da js öğrenince yaparız(Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
     </div>
 
     <div class="hero-bg">
@@ -28,7 +28,7 @@
                 <form action="">
                     <div class="form-left">
                         <label for="city">Sorularınızı giriniz:</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city1">
                         <p>Örnek: "Yapay zekâda kesikli ve sürekli kavramları nelerdir?"</p> 
                     </div>
 
@@ -75,7 +75,7 @@
                 <form action="">
                     <div class="form-left">
                         <label for="city">Sorularınızı giriniz:</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city2">
                         <p>Örnek: "Blockchain'in temel 2 isteği nedir?"</p> 
                     </div>
 
@@ -122,7 +122,7 @@
                 <form action="">
                     <div class="form-left">
                         <label for="city">Sorularınızı giriniz:</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city3">
                         <p>Örnek: "Siber güvenlik kaça ayrılır?"</p> 
                     </div>
 
@@ -142,13 +142,13 @@
                         <a class="yzk2" href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA">Kaynak 2</a>
                     </div>
                     <div id="just-line-break">
-                        <p class="yzk3">tryhackme.com</p>
-                    </div>
-                    <div >
-                        <p class="yzk4">hackthebox.com</p>
+                        <a class="yzk3" href="tryhackme.com">tryhackme.com</a>
                     </div>
                     <div id="just-line-break">
-                        <p class="yzk5">vulnhub.com</p>
+                        <a class="yzk4" href="hackthebox.com">hackthebox.com</a>
+                    </div>
+                    <div id="just-line-break">
+                        <a class="yzk5" href="vulnhub.com">vulnhub.com</a>
                     </div>
                 </header>
                 <p>Siber güvenlikte ilk adım linux bilgisidir. Sağlam bir şekilde linux kullanabilir seviyeye gelmek lazımdır. Ardından yazılım dillerini öğrenmek gereklidir. SQL, Java, Python vb. dilleri öğrenip kendini geliştirmeye sürekli devam etmelidir.</p>
@@ -169,7 +169,7 @@
                 <form action="">
                     <div class="form-left">
                         <label for="city">Sorularınızı giriniz:</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="city" id="city4">
                         <p>Örnek: "Bir web geliştiricisi ile ux designer arasındaki fark nedir?"</p> 
                     </div>
 
@@ -208,6 +208,7 @@
 
         let btn = document.getElementById('cta-btn');
         let overlay = document.getElementById('overlay');
+        let box = document.getElementById('city1').value;
 
         btn.addEventListener('click', () => {
             overlay.style.display = 'grid';
