@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 1em 0;
+}
+
+section.top {
+    background: #307d99 url('../images/bg.jpg');
+    background-position: 12% 83%;
+    color: white;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    margin: 0 1 em;
+}
+
+section.second {
+    background: #307d99 url('../images/blockchainarka.jpg');
+    background-position: 12% 50%;
+    color: white;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    margin: 0 1 em;
+}
+
+section.third {
+    background: #307d99 url('../images/siber2.jpg');
+    background-position: 12% 50%;
+    color: white;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    margin: 0 1 em;
+}
+
+section.four {
+    background: #307d99 url('../images/webarkaa.jpg');
+    background-position: 12% 50%;
+    color: white;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    margin: 0 1 em;
+}
+
+.anasayfa {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 15em;
+}
+
+.yzk1 {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.yzk2 {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.yzk3 {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.yzk4 {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.yzk5 {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.yapayzeka {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+h1 span::before {
+    content: ' ';
+    position: absolute;
+    width: 3em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+    padding-right: .9em;
+}
+
+.hero-bg p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+
+.form-container {
+    background-color: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+}
+
+label {
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+input[type=text] {
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+}
+
+.form-container p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+}
+
+input[type=button] {
+    background-color: #F89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgb(216, 126, 1);
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+h2::before {
+    content: ' ';
+    position: absolute;
+    width: 7em;
+    background: #00BFFF;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+
+p {
+    line-height: 2em;
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: none;
+    opacity: 0;
+}
+
+.animate-overlay {
+    animation: overlay 3s forwards;
+}
+
+@media (min-width: 730px) {
+
+    .form-container {
+        background-color: white;
+        margin: 2em 4em 0;
+    }
+}
+
+@media (min-width: 930px) {
+
+    .form-container {
+        background-color: white;
+        margin: 2em 8em 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+        margin-left: 2.3em;
+        margin-right: 25em;
+    }
+
+    section.top {
+        text-align: left;
+    }
+
+    .hero-bg p {
+        font-weight: bold;
+        margin: 0 2.6em 3em;
+    }
+
+    h1 {
+        margin: 1em;
+    }
+
+    form {
+        display: flex;
+    }
+
+    .form-left {
+        width: 70%;
+    }
+
+    label {
+        margin: 0;
+    }
+
+    input[type=button] {
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2.2em;
+        padding: .7em 0;
+        width: 30%;
+    }
+
+    .hero-bg p {
+        margin-bottom: 0;
+    }
+
+    section.authentic {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+            "bowl content";
+    }
+
+    .right-col {
+        grid-area: content;
+    }
+
+    .yapayzeka {
+        grid-area: bowl;
+    }
+
+    .blockchain {
+        grid-area: bowl;
+    }
+
+    .anasayfa {
+        padding-left: 27em;
+    }
+}
+
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#just-line-break {
+    white-space: pre-line;
+}
