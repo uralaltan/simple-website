@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bilgisayar Mühendisliği için Kaynak Arşivi</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <div class="overlay" id="overlay">
-        <h3>Bir sorunuz varsa ChatGPT'ye sorunuz. (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
+    <div class="overlay" id="overlay1">
+        <h3>Bir sorunuz varsa ChatGPT'ye sorunuz, burası kaynak arşivi. (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
     </div>
 
     <div class="hero-bg">
@@ -32,7 +32,7 @@
                         <p>Örnek: "Yapay zekâda kesikli ve sürekli kavramları nelerdir?"</p> 
                     </div>
 
-                    <input type="button" value="Sor" id="cta-btn">
+                    <input type="button" value="Sor" id="cta-btn-1">
                 </form>
             </div>
         </section>
@@ -63,6 +63,10 @@
         </section>
     </div>
 
+    <div class="overlay" id="overlay2">
+        <h3>Bir sorunuz varsa ChatGPT'ye sorunuz, burası kaynak arşivi. (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
+    </div>
+    
     <div class="hero-bg">
         <section class="second">
             
@@ -79,7 +83,7 @@
                         <p>Örnek: "Blockchain'in temel 2 isteği nedir?"</p> 
                     </div>
 
-                    <input type="button" value="Sor" id="cta-btn">
+                    <input type="button" value="Sor" id="cta-btn-2">
                 </form>
             </div>
         </section>
@@ -110,6 +114,10 @@
         </section>
     </div>
 
+    <div class="overlay" id="overlay3">
+        <h3>Bir sorunuz varsa ChatGPT'ye sorunuz, burası kaynak arşivi. (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
+    </div>
+    
     <div class="hero-bg">
         <section class="third">
             
@@ -126,7 +134,7 @@
                         <p>Örnek: "Siber güvenlik kaça ayrılır?"</p> 
                     </div>
 
-                    <input type="button" value="Sor" id="cta-btn">
+                    <input type="button" value="Sor" id="cta-btn-3">
                 </form>
             </div>
         </section>
@@ -157,6 +165,10 @@
         </section>
     </div>
 
+    <div class="overlay" id="overlay4">
+        <h3>Bir sorunuz varsa ChatGPT'ye sorunuz, burası kaynak arşivi. (Site bozuluyo bu arada sayfayı yenilemek lazım)</h3>
+    </div>
+    
     <div class="hero-bg">
         <section class="four">
             
@@ -173,7 +185,7 @@
                         <p>Örnek: "Bir web geliştiricisi ile ux designer arasındaki fark nedir?"</p> 
                     </div>
 
-                    <input type="button" value="Sor" id="cta-btn">
+                    <input type="button" value="Sor" id="cta-btn-4">
                 </form>
             </div>
         </section>
@@ -206,12 +218,30 @@
 
     <script>
 
-        let btn = document.getElementById('cta-btn');
-        let overlay = document.getElementById('overlay');
+        let btn1 = document.getElementById('cta-btn-1');
+        let btn2 = document.getElementById('cta-btn-2');
+        let btn3 = document.getElementById('cta-btn-3');
+        let btn4 = document.getElementById('cta-btn-4');
+        let overlay1 = document.getElementById('overlay1');
+        let overlay2 = document.getElementById('overlay2');
+        let overlay3 = document.getElementById('overlay3');
+        let overlay4 = document.getElementById('overlay4');
 
-        btn.addEventListener('click', () => {
-            overlay.style.display = 'grid';
-            overlay.classList.add('animate-overlay');
+        btn1.addEventListener('click', () => {
+            overlay1.style.display = 'grid';
+            overlay1.classList.add('animate-overlay');
+        })
+        btn2.addEventListener('click', () => {
+            overlay2.style.display = 'grid';
+            overlay2.classList.add('animate-overlay');
+        })
+        btn3.addEventListener('click', () => {
+            overlay3.style.display = 'grid';
+            overlay3.classList.add('animate-overlay');
+        })
+        btn4.addEventListener('click', () => {
+            overlay4.style.display = 'grid';
+            overlay4.classList.add('animate-overlay');
         })
 
     </script>
